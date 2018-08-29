@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wonder VR</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Muli:400,600,900" rel="stylesheet">
+     <!-- Customed CSS --> 
+    <link rel="stylesheet" href="main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- A-Frame (for VR effects)-->
+    <script src="aframe-master.js"></script>
+  </head>
+
+  <body>
+
+
+    <header>
+    <div class="maskSolid">
+      <div class="maskGradient">
+          <nav>
+            <div class="fixed-top">
+              <div class="container">
+                <div class="row">
+                  <img src="images/logo.svg" alt="">
+                </div> <!-- row -->
+              </div> <!-- container -->
+            </div> <!-- fixed-top -->
+          </nav>
+        <div class="container">
+          <div class="row">
+              
+            <div>
+              <h1>Travel the world from the edge of your seat.</h1>
+              <h2>Start Your Adventure Here</h2>
+            </div>
+          </div> <!-- row -->
+        </div> <!-- container -->
+      </div> <!-- maskGradient -->
+    </div> <!-- maskSolid -->
+    </header> <!-- header -->
+
+    <div class="section-1">
+      <div class="container">
+        <div class="row">
+          <div class="picture offset-1 col-md-4 d-none d-md-block">
+            <div class="box">
+              <div class="pic"></div>
+            </div> <!-- box -->
+          </div> <!-- picture -->
+          <div class="content col-md-6 offset-right-1">
+            <div class="bottom">
+              <h4>Download the Wonder VR app and immerse yourself in exciting virtual reality stories.</h4>
+              <div class="line"></div>
+              <button>DOWNLOAD</button>
+            </div> <!-- bottom: align the div to bottom -->
+          </div> <!-- content -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- section-1 -->
+
+    <div class="section-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Try 360° view with Wonder VR</h3>
+            <!-- A-Frame 360 video -->
+            <a-scene embedded>
+                <a-assets>
+                  <video id="video" autoplay loop crossorigin="anonymous">
+                    <source src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/"></source>
+                  </video>
+                </a-assets>
+                <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+            </a-scene>
+          </div>
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- section-2 -->
+
+    <div class="section-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <h3>More to explore</h3>
+          </div>
+            <div class="col-12 col-md-6 col-lg-4"> <!-- 1 -->
+              <div class="pic">
+                <img id="zoom" src="images/northern-lights.jpg" alt="northern-lights">
+                <div class="title">
+                  <h5>Seeing northern lights in Iceland.</h5>
+                  <h6>Start exploring</h6>
+                
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4"> <!-- 2 -->
+              <div class="pic">
+                <img id="zoom" src="images/underwater-world.jpg" alt="underwater-world">
+                <div class="title">
+                  <h5>Sea life in the underwater world.</h5>
+                  <h6>Start exploring</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4"> <!-- 3 -->
+              <div class="pic">
+                <img id="zoom" src="images/india.jpg" alt="india">
+                <div class="title">
+                  <h5>India: Adventures by the billion.</h5>
+                  <h6>Start exploring</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4"> <!-- 4 -->
+              <div class="pic">
+                <img id="zoom" src="images/microcosmos.jpg" alt="microcosmos">
+                <div class="title">
+                  <h5>The secrets of microcosmos.</h5>
+                  <h6>Start exploring</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4"> <!-- 5 -->
+              <div class="pic">
+                <img id="zoom" src="images/african-savanna.jpg" alt="african-savanna">
+                <div class="title">
+                  <h5>Wild animimals in African Savannah.</h5>
+                  <h6>Start exploring</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4"> <!-- 6 -->
+              <div class="pic">
+              <img id="zoom" src="images/himalayas.jpg" alt="himalayas">
+                <div class="title">
+                  <h5>Himalayas: The Earth's highest peaks.</h5>
+                  <h6>Start exploring</h6>
+                </div>
+              </div>
+            </div>
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- section-3 -->
+
+    <footer>
+        <p>Design + Code by Nicole Tang</p>
+    </footer> <!-- footer -->
+
+
+    <!-- Bootstrap Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+    <!-- nav scroll background effect -->
+    <script>
+        const maskGradientClientHeight = document.querySelector('.maskGradient').clientHeight;
+        const setNavBackgroundColor = () => {
+          let opacity = window.pageYOffset / maskGradientClientHeight > 1
+            ? 1
+            : window.pageYOffset / maskGradientClientHeight;
+          document.querySelector('.fixed-top').style.background = `rgba(8, 8, 26, ${opacity})`;
+        }
+        setNavBackgroundColor();
+        window.onscroll = setNavBackgroundColor;
+        </script>
+  
+  </body>
+</html>
